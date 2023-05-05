@@ -1,8 +1,9 @@
 <div class="home__container">
 	<app-card
-	gameCover="assets/bt-1.jpg"
-	gameLabel="Exclusive"
-	gamePrice="R$ 299,90"
-	gameType="Digital | PS4"
+	*ngFor="let game of gamesList"
+	gameCover="{{'assets/' + game.cover}}"
+	gameLabel="{{game.label}}"
+	gamePrice="{{game.price}}"
+	gameType="{{game.type}}"
 	></app-card>
 </div>

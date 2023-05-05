@@ -91,6 +91,15 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+					"options": {
+						"baseHref": "https://julio-maranhao.github.io/pns-store-aula-dio/",
+						"name": "JúlioMaranhão",
+						"email": "julio.maranhao@outlook.com",
+						"branch": "gh-pages"
+					}
         }
       }
     }

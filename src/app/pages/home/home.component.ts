@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GamesDatabaseService } from 'src/app/services/games-database.service';
+import { game } from '../../models/models'
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+	gamesList:Array<game> = this.service.gameList
+
+	constructor(private service: GamesDatabaseService){}
 
 }
